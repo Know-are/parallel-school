@@ -90,6 +90,7 @@ a:hover{
 /*  Nav */
 
 header {
+	z-index: 999;
   width: 100%;
   position:fixed;
   background-color: #fff;;
@@ -139,11 +140,42 @@ header .social {
   height: 35px;
 }
 
+/*  Hover Button */
+
+.support-button {
+	display: block;
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	border-radius: 360px;
+	background-color: #333;
+	right: 5%;
+	top:15%;
+}
+
+.support-button:hover {
+	transform: scale(1.1);
+  transition: .05s ease-in;
+}
+
+.support-button h2 {
+	color:#fff;
+	font-size: 21px;
+	font-weight: 600;
+	padding-top:40px;
+	text-align: center;
+  transition: .05s ease-in;
+}
+
 /*  section init */
 
 section {
   display: block;
   margin:0 auto;
+}
+
+.dark {
+	background-color: #333;
 }
 
 
