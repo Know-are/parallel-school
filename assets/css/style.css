@@ -82,6 +82,10 @@ a:hover{
       text-decoration: none;
 }
 
+.hide-on-desktop {
+	display: none;
+}
+
 .spacing {
   display: block;
   height: 70px;
@@ -191,9 +195,15 @@ min-height: 500px;
 }
 
 section .colums-left {
-float:left;
-width:49.9%;
+display: inline-block;
+width:48.9%;
 min-height: 500px;
+}
+
+section .colums-right {
+display: inline-block;
+width:48.9%;
+min-height: 400px;
 }
 
 section .colums-left p {
@@ -208,12 +218,7 @@ section .colums-left h2 {
 padding-left: 10%;
 }
 
-section .colums-right {
-margin-top: 5px;
-float:right;
-width:49.9%;
-min-height: 500px;
-}
+
 
 
 
@@ -245,4 +250,62 @@ min-height: 500px;
 
 .image-display {
   background-color: #333;
+}
+
+
+/*   Mobile */
+
+@media screen and (max-width:800px) {
+
+	.hide-on-desktop {
+		display: inline;
+		color:#333;
+	}
+
+	.hide-on-mobile {
+		display: none;
+	}
+
+	.hero-logo {
+	  background-size: 40rem;
+	}
+
+	.support-button {
+		right: 5%;
+		top:10%;
+		z-index: 9999999;
+	}
+
+	header {
+	  padding: 15px 5% 15px 5%;
+	}
+
+	header .social {
+		margin-top: -5px;
+		position: fixed;
+		display: inline-block;
+		right:5%;
+	}
+
+	header a {
+	  margin-right: 0px;
+	  color:#999999;
+	}
+
+	section h1 {
+		margin-top: 40px;
+	}
+
+	section .colums-left {
+		display: block;
+		width: 100%;
+	}
+
+	section .colums-right {
+		display: block;
+		width: 100%;
+	}
+
+
+
 }
