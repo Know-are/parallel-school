@@ -90,6 +90,16 @@ a:hover{
       text-decoration: none;
 }
 
+p a{
+    color:#222;
+    text-decoration: underline;
+}
+
+p a:hover{
+    color:#666;
+        text-decoration: underline;
+}
+
 .hide-on-desktop {
 	display: none;
 }
@@ -585,4 +595,65 @@ text-decoration: underline;
 .learn-with-us {
 	background-image: url(../img/learn.jpg);
 	background-size: cover;
+	background-position: center center;
+}
+
+.tee {
+	background-image: url(../img/tee.jpg);
+	background-size: cover;
+		background-position: center center;
+}
+
+.help {
+	background-image: url(../img/help.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.fun {
+	background-image: url(../img/fun.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.talk {
+	background-image: url(../img/talk.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.sit {
+	background-image: url(../img/sit.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.teach {
+	background-image: url(../img/teach.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.play {
+	background-image: url(../img/play.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+.work {
+	background-image: url(../img/work.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.write {
+	background-image: url(../img/write.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.hero {
+	background-image: url(../img/hero.jpg);
+	background-size: cover;
+	background-position: center center;
 }
