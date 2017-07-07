@@ -54,6 +54,7 @@ html {
 }
 
 body {
+	background-image: url(../img/bg.png);
   width: 100%;
   color:#222222;
   font-size: 18px;
@@ -74,10 +75,15 @@ h2 {
 }
 
 p {
+	font-family: 'Pridi', sans-serif;
   color:#222;
-  font-weight: 300;
+  font-weight: 400;
   max-width: 470px;
   line-height: 25px;
+}
+
+.colums-left p {
+		text-shadow: 2px 4px 3px rgba(255,255,255,0.3);
 }
 
 a{
@@ -631,7 +637,7 @@ text-decoration: underline;
 .teach {
 	background-image: url(../img/teach.jpg);
 	background-size: cover;
-	background-position: top center;
+	background-position: center center;
 }
 
 .play {
