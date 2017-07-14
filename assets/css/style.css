@@ -75,15 +75,15 @@ h2 {
 }
 
 p {
-	font-family: 'Pridi', sans-serif;
+	font-family:  sans-serif;
   color:#222;
-  font-weight: 400;
+  font-weight: 300;
   max-width: 470px;
   line-height: 25px;
 }
 
 .colums-left p {
-		text-shadow: 2px 4px 3px rgba(255,255,255,0.3);
+		text-shadow: 2px 4px 3px rgba(255,255,255,0.8);
 }
 
 a{
