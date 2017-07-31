@@ -246,6 +246,10 @@ width:48.9%;
 min-height: 500px;
 }
 
+section .nofix-height {
+min-height: 0px!important;
+}
+
 section .colums-right {
 display: inline-block;
 width:48.9%;
@@ -320,6 +324,7 @@ padding-left: 10%;
 
 .major-feature .feature h4 {
 	font-size: 22px;
+	font-weight: 600;
 }
 
 .minor-feature-wrapper {
