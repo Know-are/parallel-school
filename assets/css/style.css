@@ -209,6 +209,18 @@ section {
 	background-color: #222;
 }
 
+.progress-item {
+	text-align: center;
+}
+
+.funding-now {
+	font-weight: 400;
+	color:#555;
+}
+
+.funding-total {
+		font-weight: 600;
+}
 
 section p {
   padding: 20px 10% 50px 10%;
@@ -312,6 +324,12 @@ padding-left: 10%;
 
 .minor-feature-wrapper {
 	margin-top: -100px;
+	text-align: center;
+}
+
+h2.feature-title {
+padding-left: 0%!important;
+margin-bottom: 20px;
 }
 
 .minor-feature {
@@ -595,6 +613,45 @@ text-decoration: underline;
 
 }
 
+
+.progress {
+	transform: translateY(30px);
+		display: inline-block;
+		text-align: center;
+    position: auto;
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+		padding-right: 10%;
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+	margin-top: -40px;
+}
+
+.progress-circle-back {
+	fill: none;
+	stroke: #eee;
+	stroke-width:10px;
+}
+
+.progress-circle-prog {
+	fill: none;
+	stroke: #333;
+	stroke-width: 10px;
+	stroke-dasharray: 0 999;
+	stroke-dashoffset: 0px;
+    transition: stroke-dasharray 0.7s linear 0s;
+}
+
+.progress-text {
+	width: 100%;
+	transform: translateY(-100px);
+	top: 60px;
+	text-align: center;
+	font-size: 2em;
+}
 
 /*  Background */
 
