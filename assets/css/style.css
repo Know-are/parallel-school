@@ -55,6 +55,7 @@ html {
 
 body {
 	background-image: url(../img/bg.png);
+	background-color: #fafafa;
   width: 100%;
   color:#222222;
   font-size: 18px;
@@ -143,6 +144,17 @@ header .social {
   right: 5%;
 }
 
+.line {
+  background: url(../img/line.png) no-repeat;
+  background-size: 28px;
+}
+
+.line:hover {
+  background: url(../img/line-color.png) no-repeat;
+  background-size: 28px;
+}
+
+
 .facebook {
   background: url(../img/facebook.svg) no-repeat;
   background-size: 28px;
@@ -203,6 +215,64 @@ header .social {
 section {
   display: block;
   margin:0 auto;
+}
+
+.paper-wrapper {
+	text-align: center;
+}
+
+.paper-title {
+	color: #333;
+	padding-top: 200px;
+}
+
+.paper {
+box-shadow: 0 37.125px 70px -12.125px rgba(0, 0, 0, 0.1);
+	margin-top: 100px;
+	display: inline-block;
+	background-color: #fff;
+	width: 800px;
+}
+
+.paper-grid {
+	width: 100%;
+	text-align: left;
+  transition: .02s ease-in;
+}
+
+a .paper-grid:hover {
+	background-color: #333;
+	color:#fff;
+  transition: .02s ease-in;
+}
+
+.paper-grid-left {
+	display: inline-block;
+	text-align: left;
+	width: 65%;
+	line-height: 24px;
+	padding: 35px;
+}
+
+.paper-grid-right {
+	display: inline-block;
+	text-align: right;
+	width: 20%;
+}
+
+.paper-grid-right h4 {
+	font-size: 13px;
+	line-height: 17px;
+	font-weight: 600;
+}
+
+.full-grid-image {
+	padding: 35px;
+	background-color: #fefefe;
+}
+
+.paper-grid-left h4 {
+	margin-top: 5px;
 }
 
 .dark {
@@ -526,6 +596,10 @@ text-decoration: underline;
   background-size: 34px;
 }
 
+footer {
+	padding: 70px;
+	text-align: center;
+}
 
 /*   Mobile */
 
