@@ -72,7 +72,7 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 p {
@@ -217,8 +217,23 @@ section {
   margin:0 auto;
 }
 
+
+.backbutton {
+	display: inline-block;
+	margin-top: 100px;
+	font-family:  "Sukhumvit Set", "Prompt", sans-serif;
+  color:#555;
+	cursor: pointer;
+	font-size:40px;
+}
+
 .paper-wrapper {
 	text-align: center;
+}
+
+.paper .paper-sub-title {
+	margin-top: 30px;
+	line-height: 50px;
 }
 
 .paper-title {
@@ -228,16 +243,28 @@ section {
 
 .paper {
 box-shadow: 0 37.125px 70px -12.125px rgba(0, 0, 0, 0.1);
-	margin-top: 100px;
+	margin-top: 20px;
 	display: inline-block;
 	background-color: #fff;
 	width: 800px;
+  transition: .05s ease;
+}
+
+.paper:hover {
+	box-shadow: 0 37.125px 70px -12.125px rgba(0, 0, 0, 0.2);
+	transform: scale(1.01);
+  transition: .05s ease;
 }
 
 .paper-grid {
 	width: 100%;
 	text-align: left;
   transition: .02s ease-in;
+}
+
+.paper-paragraph {
+	font-size: 15px;
+	max-width: 100%;
 }
 
 a .paper-grid:hover {
@@ -260,10 +287,11 @@ a .paper-grid:hover {
 	width: 20%;
 }
 
+
 .paper-grid-right h4 {
 	font-size: 13px;
 	line-height: 17px;
-	font-weight: 600;
+	color: #999;
 }
 
 .full-grid-image {
@@ -430,6 +458,42 @@ margin-bottom: 20px;
 
 .minor-feature .feature h4 {
 	font-size: 17px;
+}
+
+
+/* Form */
+
+.contact-form {
+	padding: 0 15%;
+	display: inline-block;
+	margin-top: 40px;
+	text-align: left;
+	width: 100%;
+}
+
+.contact-form input[type=text] {
+		font-size: 18px;
+    box-sizing: border-box;
+		color:#333;
+		background-color: #fff;
+}
+
+.contact-form input[type=textarea] {
+		font-size: 18px;
+    box-sizing: border-box;
+		color:#333;
+		background-color: #FEFEFE;
+}
+
+textarea {
+	background-color: #FEFEFE;
+	margin-top: 10px;
+	width: 50%;
+	min-height: 200px;
+	border: none;
+	outline: none;
+	border-bottom: solid 2px #c9c9c9;
+	transition: border 0.3s;
 }
 
 /* Support */
