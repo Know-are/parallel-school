@@ -196,7 +196,7 @@ header .social {
 
 .support-button:hover {
 	transform: scale(1.1) translateY(-1px);
-  transition: .05s ease-in;
+  transition: .05s ease;
 	box-shadow: 0 37.125px 70px -12.125px rgba(0, 0, 0, 0.1);
 	z-index:99999;
 }
@@ -207,7 +207,7 @@ header .social {
 	font-weight: 600;
 	padding-top:40px;
 	text-align: center;
-  transition: .05s ease-in;
+  transition: .05s ease;
 }
 
 /*  section init */
@@ -225,6 +225,12 @@ section {
   color:#555;
 	cursor: pointer;
 	font-size:40px;
+	  transition: .3s ease;
+}
+
+.backbutton:hover {
+	  transition: .3s ease;
+	transform: scale(1.1);
 }
 
 .paper-wrapper {
@@ -242,24 +248,23 @@ section {
 }
 
 .paper {
-box-shadow: 0 37.125px 70px -12.125px rgba(0, 0, 0, 0.1);
 	margin-top: 20px;
 	display: inline-block;
 	background-color: #fff;
 	width: 800px;
-  transition: .05s ease;
+  transition: .3s ease;
 }
 
 .paper:hover {
 	box-shadow: 0 37.125px 70px -12.125px rgba(0, 0, 0, 0.2);
 	transform: scale(1.01);
-  transition: .05s ease;
+  transition: .3s ease;
 }
 
 .paper-grid {
 	width: 100%;
 	text-align: left;
-  transition: .02s ease-in;
+  transition: .02s ease;
 }
 
 .paper-paragraph {
@@ -267,10 +272,14 @@ box-shadow: 0 37.125px 70px -12.125px rgba(0, 0, 0, 0.1);
 	max-width: 100%;
 }
 
+.paper-grid p {
+	padding: 0;
+}
+
 a .paper-grid:hover {
 	background-color: #333;
 	color:#fff;
-  transition: .02s ease-in;
+  transition: .02s ease;
 }
 
 .paper-grid-left {
@@ -386,12 +395,12 @@ padding-left: 10%;
   width: 500px;
   height:350px;
   background-color: #1c1c1c;
-  transition: .1s ease-in;
+  transition: .1s ease;
 }
 
 .video-player:hover {
   transform: scale(1.04);
-  transition: .05s ease-in;
+  transition: .05s ease;
 }
 
 .image-display {
@@ -486,15 +495,37 @@ margin-bottom: 20px;
 }
 
 textarea {
-	background-color: #FEFEFE;
+		font-family:  "Sukhumvit Set", "Prompt", sans-serif;
+	background-color: #fff;
 	margin-top: 10px;
+	font-size: 18px;
 	width: 50%;
 	min-height: 200px;
 	border: none;
 	outline: none;
 	border-bottom: solid 2px #c9c9c9;
-	transition: border 0.3s;
 }
+
+.form-button {
+	width: 120px;
+font-family: "Sukhumvit Set", "Prompt", sans-serif;
+height: 35px;
+border-radius: 5px;
+color: #fff;
+background-color: #333;
+font-size: 16px;
+text-align: center;
+border: none;
+transition: .3s;
+position: relative;
+margin: 40px 0 30px 0;
+}
+
+.form-button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
 
 /* Support */
 
@@ -509,12 +540,12 @@ textarea {
 	margin-right: 10px;
 	background-color: #222;
 	width: 32.2222%;
-	transition: ease-in 0.1s;
+	transition: ease 0.1s;
 	z-index:1;
 }
 
 .support-way:hover {
-	transition: ease-in 0.1s;
+	transition: ease 0.1s;
 	transform: translateY(-3px);
 	transform:scale(1.02);
 	box-shadow: 0 37.125px 70px -12.125px rgba(0, 0, 0, 0.3);
@@ -724,7 +755,7 @@ footer {
 		margin-right: 10px;
 		background-color: #222;
 		width: 100%;
-		transition: ease-in 0.1s;
+		transition: ease 0.1s;
 		z-index:1;
 		padding-bottom: 50px;
 	}
