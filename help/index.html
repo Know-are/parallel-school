@@ -69,17 +69,17 @@
 
       <div class="contact-form">
     <h4>ชื่อของท่าน</h4>
-      <input type="text" name="name"></input>
+      <inputplaceholder="" id="name" type="text" name="name"></input>
       <br/>  <br/>  <br/>
       <h4>หน่วยงาน</h4>
-      <input type="text" name="organization"></input>
+      <input placeholder=""  id="organization" type="text" name="organization"></input>
       <br/>  <br/>  <br/>
       <h4>อีเมลหรือเบอร์ติดต่อกลับ</h4>
-      <input type="text" name="contact"></input>
+      <input placeholder="" id="contact" type="text" name="contact"></input>
       <br/>  <br/>  <br/>
       <h4>บอกเล่ารายละเอียด</h4>
 
-      <textarea name="information">
+      <textarea placeholder="" id="information" name="information">
       </textarea>
     <br/>  <br/>  <br/>
       <p>ข้อมูลนี้จะถูกส่งไปยังทีมงาน และจะติดต่อกลับไป</p>
@@ -100,6 +100,44 @@
 
   </footer>
 
+
+  <script src="../assets/js/plc.js"></script>
+  <script>
+
+superplaceholder({
+  el: information,
+  sentences: [ 'คุณจะให้ความช่วยเหลือเราได้อย่างไรบ้าง', 'โปรดยกตัวอย่างให้พอเข้าใจ' ],
+  options: {
+    loop: true
+  }
+})
+
+superplaceholder({
+  el: name,
+  sentences: [ 'คุณชื่ออะไร', 'กรุณากรอกชื่อของคุณ ?' ],
+  options: {
+    loop: true
+  }
+})
+
+superplaceholder({
+  el: organization,
+  sentences: [ 'หน่วยงานของคุณ', 'ปล่อยว่างหากคุณต้องการช่วยเหลือในนามบุคคล' ],
+  options: {
+    loop: true
+  }
+})
+
+superplaceholder({
+  el: contact,
+  sentences: [ 'กรอกช่องทางติดต่อกลับ', 'ทางทีมงานจะติดต่อกลับไปอย่างเร็วที่สุด' ],
+  options: {
+  loop: true
+  }
+})
+
+
+</script>
 
   </body>
 </html>
