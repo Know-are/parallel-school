@@ -59,7 +59,7 @@ body {
   width: 100%;
   color:#222222;
   font-size: 18px;
-	font-family: sans-serif;
+	font-family:  "Sukhumvit Set", "Prompt", sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -76,7 +76,7 @@ h2 {
 }
 
 p {
-	font-family:  sans-serif;
+	font-family:  "Sukhumvit Set", "Prompt", sans-serif;
   color:#222;
   font-weight: 300;
   max-width: 470px;
@@ -144,6 +144,8 @@ header .social {
   right: 5%;
 }
 
+
+
 .line {
   background: url(../img/line.png) no-repeat;
   background-size: 28px;
@@ -181,7 +183,11 @@ header .social {
   height: 35px;
 }
 
+
+
+
 /*  Hover Button */
+
 
 .support-button {
 	display: block;
@@ -208,6 +214,23 @@ header .social {
 	padding-top:40px;
 	text-align: center;
   transition: .05s ease;
+}
+
+/* Header */
+
+.intro-header {
+	background-image: url(../img/hero-bg.jpg);
+	background-size: cover;
+	height: 100vh!important;
+}
+
+.white {
+	color: #fff;
+	opacity: 0.95;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 30px;
+	font-family:  "Sukhumvit Set", "Prompt", sans-serif;
 }
 
 /*  section init */
@@ -350,7 +373,7 @@ section .colums-full {
 section .colums-left {
 display: inline-block;
 width:48.9%;
-min-height: 500px;
+min-height: 400px;
 }
 
 section .nofix-height {
@@ -380,7 +403,7 @@ padding-left: 10%;
 /*   Section */
 
 .hero-logo {
-  background-image: url(../img/logo.svg);
+  background-image: url(../img/logo_white.svg);
   background-size: 1100px;
   background-repeat: no-repeat;
   background-position: center;
@@ -730,6 +753,10 @@ footer {
 		right:5%;
 	}
 
+	.intro-header {
+		height: auto!important;
+	}
+
 	header a {
 	  margin-right: 0px;
 	  color:#999999;
@@ -762,7 +789,7 @@ footer {
 
 	.support-way h1 {
 		color: #fff;
-		font-size: 27px;
+		: 27px;
 		padding: 5px 10% 0 10%;
 		margin-bottom:-10px;
 	}
