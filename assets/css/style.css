@@ -723,6 +723,32 @@ footer {
 
 @media screen and (max-width:800px) {
 
+
+	.minor-feature {
+		margin-top: 20px;
+		text-align: center;
+		width: 100%;
+		display:block;
+	}
+
+	.minor-feature .feature {
+		margin-top: 5px;
+		width: 120px;
+		display:inline-block;
+	}
+
+	.minor-feature .feature-icon {
+		margin: 9px;
+		display: inline-block;
+		width: 15px;
+		height: 20px;
+		font-size:20px;
+	}
+
+	.minor-feature .feature h4 {
+		font-size: 13px;
+	}
+
 	.hide-on-desktop {
 		display: inline;
 		color:#222;
@@ -730,6 +756,10 @@ footer {
 
 	.hide-on-mobile {
 		display: none;
+	}
+
+	.subject-mobile {
+		margin-top: 100px;
 	}
 
 	.hero-logo {
