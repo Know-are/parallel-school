@@ -724,6 +724,14 @@ footer {
 @media screen and (max-width:800px) {
 
 
+	p {
+		font-size: 14px;
+	}
+
+	.white {
+		font-size: 18px;
+	}
+
 	.minor-feature {
 		margin-top: 20px;
 		text-align: center;
