@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/css/style.css"></link>
     <link rel="stylesheet" href="assets/css/animate.css"></link>
 
-
     <link rel='icon' href="assets/img/icon.ico"></link>
     <link rel='icon' href="assets/img/icon.png"></link>
     <link rel="shortcut icon" href="assets/img/icon.ico">
@@ -36,13 +35,14 @@
 
   </head>
   <body>
+
     <header>
     <a class="hide-on-mobile" href="https://www.theparallel.school">โรงเรียนคู่ขนาน</a>
     <a class="hide-on-mobile" href="https://www.theparallel.school#intro">ที่มา</a>
     <a class="hide-on-mobile" href="https://www.theparallel.school#timeline">หลักสูตร</a>
     <a class="hide-on-mobile" href="https://www.theparallel.school#impact">ผลกระทบ</a>
     <a class="hide-on-mobile" href="https://www.theparallel.school/funding">สนับสนุนเรา</a>
-      <a class="hide-on-mobile" href="https://www.theparallel.school/faq">คำถามที่พบบ่อย</a>
+    <a class="hide-on-mobile" href="https://www.theparallel.school/faq">คำถามที่พบบ่อย</a>
     <a class="hide-on-mobile" href="https://www.theparallel.school/condition">เงื่อนไข</a>
     <a class="hide-on-desktop" href="">MENU</a>
     <div class="social">
@@ -51,8 +51,24 @@
     </div>
     </header>
 
-    <a href="#support"><div class="support-button"><h2 class="quick-hide">สนับสนุน</h2></div></a>
 
+   <!--
+    <div class="mobile-navigation">
+      <div class="navigation-control">
+      <a href="http://www.theparallel.school" class="backbutton"><span class="ion-ios-close"></span></a>
+    </div> <br/><br/>
+      <a class="" href="https://www.theparallel.school">โรงเรียนคู่ขนาน</a>
+      <a class="" href="https://www.theparallel.school#intro">ที่มา</a>
+      <a class="" href="https://www.theparallel.school#timeline">หลักสูตร</a>
+      <a class="" href="https://www.theparallel.school#impact">ผลกระทบ</a>
+      <a class="" href="https://www.theparallel.school/funding">สนับสนุนเรา</a>
+      <a class="" href="https://www.theparallel.school/faq">คำถามที่พบบ่อย</a>
+      <a class="" href="https://www.theparallel.school/condition">เงื่อนไข</a>
+    </div>
+  -->
+
+
+    <a href="#support"><div class="support-button"><h2 class="quick-hide">สนับสนุน</h2></div></a>
 
 
     <section class="intro-header">
@@ -354,37 +370,7 @@
 
   <script src="assets/js/jq.js"></script>
   <script src="assets/js/smt.js"></script>
-
-  <script>
-
-
-  window.percentomize = function() {
-
-  var we_want_all_money = 10000000;
-  var now_we_already_have = 120000;
-
-  /* Do not edit the code below */
-  var percent = (now_we_already_have / we_want_all_money) * 100;
-
-	var x = document.querySelector('.progress-circle-prog');
-  x.style.strokeDasharray = (percent * 4.65) + ' 999';
-	var el = document.querySelector('.progress-text');
-	var from = $('.progress-text').data('progress');
-	$('.progress-text').data('progress', percent);
-	var start = new Date().getTime();
-
-	setTimeout(function() {
-	    var now = (new Date().getTime()) - start;
-	    var progress = now / 700;
-		  result = percent > from ? Math.floor((percent - from) * progress + from) : Math.floor(from - (from - percent) * progress);
-	    el.innerHTML = progress < 1 ? result+'%' : percent+'%';
-	    if (progress < 1) setTimeout(arguments.callee, 10);
-	}, 10);
-}
-
-setTimeout(window.percentomize, 200);
-
-  </script>
+  <script src="assets/js/script.js"></script>
 
   </body>
 </html>
